@@ -1,0 +1,5 @@
+name: "Custom CodeQL config"
+disable-default-queries: true
+queries:
+  - name: Temporarily use a development branch from a fork of codeql-go
+    uses: smowton/codeql-go/ql/src/codeql-suites/go-code-scanning.qls@smowton/fix/optimize-guarding-function
